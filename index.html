@@ -902,9 +902,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p class="steps__item-paragraph">Successfully achieve permanent U.S. residency by submitting your I-829 petition with our support.</p>
                         </div>
                     </div>
-                    <a href="#" class="steps__cta cta">CONTACT US</a>
+                    <a href="#" class="steps__cta cta" id="contact-us-btn">CONTACT US</a>
                 </div>
             </section>
+
+            <dialog id="contact-popup">
+                <button class="dialog-close"></button>
+            <section class="contact">
+                <div class="contact__container">
+                    <div class="contact__text-container">
+                        <p class="contact__subtitle subtitle">GET IN TOUCH</p>
+                        <h2 class="contact__title title">Start Your Visa Journey With Us Today</h2>
+                        <p class="contact__paragraph">Fill out the form below and our team will get back to you shortly.</p>
+        
+                        <form action="https://formspree.io/f/xdknrdol" method="POST">
+                            <div style="margin-bottom: 15px;">
+                                <label for="first-name" style="font-size: 16px; font-weight: bold;">First Name:</label><br>
+                                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" 
+                                       style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="last-name" style="font-size: 16px; font-weight: bold;">Last Name:</label><br>
+                                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" 
+                                       style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="email" style="font-size: 16px; font-weight: bold;">Email:</label><br>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" 
+                                       style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="state" style="font-size: 16px; font-weight: bold;">State:</label><br>
+                                <input type="text" id="state" name="state" placeholder="Enter your state" 
+                                       style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="phone" style="font-size: 16px; font-weight: bold;">Indian Number:</label><br>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" 
+                                       style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="query-related" style="font-size: 16px; font-weight: bold;">Query Related To:</label><br>
+                                <input type="text" id="query-related" name="query-related" placeholder="Enter query subject" 
+                                       style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="message" style="font-size: 16px; font-weight: bold;">Message:</label><br>
+                                <textarea id="message" name="message" rows="5" placeholder="Enter your message" 
+                                          style="width: 100%; padding: 10px; font-size: 14px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    style="background-color: #FF4C4C; color: white; padding: 10px 20px; font-size: 14px; border: none; border-radius: 0; cursor: pointer;">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact__info-container">
+                        <div class="contact__map-container map"></div>
+            
+                            <div class="contact__info-items-container">
+                                <div class="contact__info-item">
+                                    <img src="https://www.canamenterprises.com/wp-content/uploads/2023/12/canam-address-icon.svg" alt="" class="contact__info-item-image">
+                                    <p class="contact__info-item-title">OUR ADDRESS</p>
+                                    <p class="contact__info-item-paragraph"> plot no.7   – near axis bank <br> kaithalroad, cheeka, Haryana</p>
+                                </div>
+                                <div class="contact__info-item">
+                                    <img src="https://www.canamenterprises.com/wp-content/uploads/2023/12/canam-phone-icon.svg" alt="" class="contact__info-item-image">
+                                    <p class="contact__info-item-title">OUR PHONE NUMBER</p>
+                                    <p class="contact__info-item-paragraph"><a href="+91 9034354900">+91 9034354900</a><br>
+                                        <a href="tel:+1 (212) 668-0692">+91 9034354900</a></p>
+                                </div>
+                                <div class="contact__info-item">
+                                    <img src="https://www.canamenterprises.com/wp-content/uploads/2023/12/canam-hours-icon.svg" alt="" class="contact__info-item-image">
+                                    <p class="contact__info-item-title">OUR OFFICE HOURS</p>
+                                    <p class="contact__info-item-paragraph">Monday-Friday: 9am to 5pm</p>
+                                </div>
+                                <div class="contact__info-item">
+                                    <img src="https://www.canamenterprises.com/wp-content/uploads/2023/12/canam-email-icon.svg" alt="" class="contact__info-item-image">
+                                    <p class="contact__info-item-title">OUR EMAIL</p>
+                                    <p class="contact__info-item-paragraph"><a href="#">khullarakshay723@gmail.com</a><br>
+                                        <a href="mailto:ir@canamenterprises.com">khullarakshay723@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    </div>
+                </div>
+        
+                            
+            </dialog>
+
             <!--newsletter-->
             <section class="newsletter">
                 <div class="newsletter__container">
@@ -1293,7 +1381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     
     </dialog>
-    
+
     <link rel='stylesheet' id='contact-form-7-css' href='https://www.canamenterprises.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8' media='all' />
     <script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
         "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i
