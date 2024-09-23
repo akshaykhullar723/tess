@@ -675,39 +675,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Create and append Intercom settings script
-let intercomSettingsScript = document.createElement('script');
-intercomSettingsScript.innerHTML = 'window.intercomSettings = { api_base: "https://api-iam.intercom.io", app_id: "gitucr7w" };';
-document.head.appendChild(intercomSettingsScript);
 
-// Create and append Intercom widget script
-var intercomWidgetScript = document.createElement('script');
-intercomWidgetScript.innerHTML =
-    '(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic(\'reattach_activator\');ic(\'update\',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement(\'script\');s.type=\'text/javascript\';s.async=true;s.src=\'https://widget.intercom.io/widget/gitucr7w\';var x=d.getElementsByTagName(\'script\')[0];x.parentNode.insertBefore(s,x);};if(document.readyState===\'complete\'){l();}else if(w.attachEvent){w.attachEvent(\'onload\',l);}else{w.addEventListener(\'load\',l,false);}}})();';
-document.head.appendChild(intercomWidgetScript);
-
-// Function to wait for Intercom to be available
-function waitForIntercom(callback) {
-    var checkIntercom = setInterval(function() {
-        if (window.Intercom) {
-            clearInterval(checkIntercom);
-            callback();
-            document.addEventListener('click', e => {
-                let messengerFrame = document.querySelector('.intercom-messenger-frame');
-                if (messengerFrame && !messengerFrame.contains(event.target)) {
-                    if (window.Intercom) {
-                        window.Intercom('hide');
-                    }
-                }
-            });
-        }
-    }, 100); // Check every 100ms
-}
-
-waitForIntercom(function() {
-    setTimeout(function() {
-        document.querySelector('.intercom-lightweight-app-launcher') ? .click();
-    }, 60000 * 2); // 2 minutes
-});
 
 
 
